@@ -18,7 +18,7 @@
 }
 body{
     width: 1024px;
-    height: 100vh;
+    height: 1024px;
     margin: auto;
     font-family: "Inter", serif;
     background-color: var(--negro);
@@ -55,6 +55,7 @@ body{
     border-radius: 25px 25px 25px 25px ;
     background-color:var(--azul) ;
 }
+
 /* Contenedor */
 .contenedor{
     border-radius: 20px;
@@ -65,6 +66,7 @@ body{
     grid-template-columns: 1fr 1fr;
     /* column-gap: 30px; */
 } 
+
 .uno{
     background-color:var(--negroplo);
     border-radius: 20px 0 0 20px;
@@ -259,3 +261,31 @@ option{
     color: var(--negropuro);
     font-size: 16px;
 }
+
+@media screen and (width <= 640px) {
+   
+    .contenedor{
+        /* border-radius: 20px;
+        border: solid var(--plomoscuro) 1px;
+        width: 950px;
+        margin: 0 auto;
+        display: grid; */
+        grid-template-columns: 50%;
+        margin-left: 20px;
+        
+        /* column-gap: 30px; */
+    } 
+    .titulo{
+        width: 50%;
+    }
+    .uno{
+        border-radius: 20px 20px 0 0;
+    }
+    .formulario{
+        border-radius: 0 0 20px 20px;
+       box-shadow: #1D1D1F 1px;
+    }
+    body{
+        height: 100%;
+    }
+  }
