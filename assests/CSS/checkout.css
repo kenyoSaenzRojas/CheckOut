@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --plomo:#6C727F;
+    --negro:#1D1D1F;
+    --plonegro:#D2D5DA;
+    --negroplo:#F3F4F6;
+    --negropuro:#FFFFFF;
+    --plomoscuro:#00000033;
+    --azul:#95AAD0;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 1024px;
+    height: 100vh;
+    margin: auto;
+    font-family: "Inter", serif;
+    background-color: var(--negro);
+}
+.principal{
+    margin: 20px 0;
+    border: solid  1px;
+    background-image: url(./background-image.png);
+    background-repeat: no-repeat;
+    background-size: 1024px 250px;
+    background-color: var(--negropuro);
+   
+}
+.titulo{
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    /* margin-bottom: 30px; */
+}
+
+.titulo h1{
+    font-style: normal;
+    color: var(--negropuro);
+
+}
+.titulo span{
+    font-style: normal;
+    font-size: 16px;
+    align-self: center;
+    color: var(--negropuro);
+    padding: 5px 10px;
+    border-radius: 25px 25px 25px 25px ;
+    background-color:var(--azul) ;
+}
+/* Contenedor */
+.contenedor{
+    border-radius: 20px;
+    border: solid var(--plomoscuro) 1px;
+    width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* column-gap: 30px; */
+} 
+.uno{
+    background-color:var(--negroplo);
+    border-radius: 20px 0 0 20px;
+   
+}
+.formulario{
+    background-color: var(--negropuro);
+    border-radius: 0px 20px 20px 0px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+}
+.info{
+    display: flex;
+    column-gap: 20px ;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenido span{
+    color: var(--negro);
+    font-weight: 700;
+}
+.contenido p{
+    color: var(--plomo);
+    font-weight: 400;
+}
+.precio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.precio span{
+    color: var(--negro);
+    font-weight: 700;
+}
+.precio p{
+    color: var(--plomo);
+    font-weight: 400;
+    text-align: end;
+}
+/* espacio */
+.espacio span{
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* imagen */
+.info img{
+    margin: 10px 0;
+    
+} 
+.imagen{
+    border-radius: 5px;
+    background-color: var(--negropuro);
+}
+.parlante{
+    padding: 10px 28px;
+}
+.clock{
+    padding: 10px 33px;
+}
+.tv{
+    padding: 5px 10px;
+}
+
+/* Formulario */
+.aplicar{
+    margin-top: 20px;
+   
+}
+
+.enviar{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.enviar input{
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.uno::placeholder {
+    color: var(--plomo);
+    font-size: 1.2em;
+    font-family: "Inter", serif;
+  }
+
+  .boton1{
+    color: var(--negropuro);
+    background-color: var(--negro);
+    border-radius: 10px;
+    font-family:"Inter", serif;
+    margin: 7px;
+ 
+  }
+  select{
+    margin-top: 10px;
+    padding: 15px;
+  }
+
+.total{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 10px;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+  
+}
+.text{
+    font-size: 16px;
+    font-family: "Inter", serif;
+}
+.texto span{
+    display: block;
+    color: var(--plomo);
+}
+.precio{
+    font-family: "Inter", serif;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.precio span{
+    color: var(--plomoscuro);
+}
+
+/* Formularios */
+
+h2{
+    margin: 30px 20px;
+}
+form{
+    margin: 30px 20px;
+}
+.grid{
+    display: grid;
+}
+label{
+    color: var(--plomo);
+    margin: 10px 0;
+}
+input{
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--negroplo);
+}
+.grid input::placeholder{
+    font-size: 16px;
+    font-family: "Inter", serif;
+
+}
+
+.mitad{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+    /* margin-left:10px; */
+    margin-bottom: 20px;
+}
+option{
+    font-size: 16px;
+    font-family: "Inter", serif;
+
+}
+
+.pais{
+    display: flex;
+    flex-direction: column;
+}
+.codigo{
+    display: flex;
+    flex-direction: column;
+
+}
+.paiss{
+    margin: 20px 0px 0px 0px;
+}
+
+.continuar{
+    width: 100%;
+    height: 50px;
+    background-color: var(--negro);
+    border-radius: 10px;
+    color: var(--negropuro);
+    font-size: 16px;
+}
